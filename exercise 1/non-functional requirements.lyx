@@ -67,6 +67,41 @@ Non-functional requirements
 NOTE: REMEMBER THAT THE REQUIREMENTS SHOULD BE MEASURABLE
 \end_layout
 
+\begin_layout Standard
+Note: A functional requirement describes WHAT a software system should do,
+ while non-functional requirements place constraints on HOW the system will
+ do so.
+\end_layout
+
+\begin_layout Paragraph
+Environmental requirements
+\end_layout
+
+\begin_layout Standard
+Notes:
+\end_layout
+
+\begin_layout Enumerate
+Which devices the app run on (phone, tablet, web, pc) <--- is this a non-functio
+nal requirement?
+\end_layout
+
+\begin_layout Enumerate
+And OS's <--- is this a non-functional requirement?
+\end_layout
+
+\begin_layout Standard
+Example???:
+\end_layout
+
+\begin_layout Standard
+All current popular mobile OS's should be supported by the user application;
+ Windows Phone, Android, and iOS.
+ The application should be able to run on both smartphone- and tablet-sized
+ devices.
+ <--- IS THIS NON-FUNCTIONAL??
+\end_layout
+
 \begin_layout Paragraph
 Efficiency requirements
 \end_layout
@@ -87,20 +122,23 @@ Application should not be slow (needs some kind of measure)
 Resource requirements on device (space, time)
 \end_layout
 
-\begin_layout Paragraph
-Environmental requirements
+\begin_layout Enumerate
+Scalability
 \end_layout
 
 \begin_layout Standard
-Notes:
+Example???:
 \end_layout
 
-\begin_layout Enumerate
-Which devices the app run on (phone, tablet, web, pc)
-\end_layout
-
-\begin_layout Enumerate
-And OS's
+\begin_layout Standard
+The response time from the server should not exceed 1 ms, unless the server
+ is unavailable.
+ Server reliability should be at least 99.9 % yearly uptime.
+ The resource requirements for the user application, running on the user's
+ device, should be modest; the application should be able to run on mid-level
+ smartphones from 2010.
+ The server should be able to scale to 10000s of concurrent users without
+ suffering performance degradation.
 \end_layout
 
 \begin_layout Paragraph
@@ -117,6 +155,17 @@ UI requirements (GUI, console, scalable UI reqs stuff, graphics or text)
 
 \begin_layout Enumerate
 Ease of use (simple interface, complexity of interactions)
+\end_layout
+
+\begin_layout Standard
+Example???:
+\end_layout
+
+\begin_layout Standard
+New players should be able to understand all the UI elements, both before
+ and after joining a game, in less than 15 minutes of playtime.
+ The user should be able to navigate menus and play the game using at most
+ finger as input on touch-enabled devices.
 \end_layout
 
 \begin_layout Paragraph
@@ -138,6 +187,19 @@ Credentials transfer
 \begin_layout Enumerate
 Valid credential requirements (password length, legit username characters,
  etc.)
+\end_layout
+
+\begin_layout Standard
+Example???:
+\end_layout
+
+\begin_layout Standard
+Credentials should only be stored on the server using salted hashes.
+ Credential transfers between the user application and the game server should
+ always be on a secure channel.
+ Valid characters for passwords and usernames should include all alpha-numeric
+ characters.
+ Password length must not be less than 8 characters.
 \end_layout
 
 \end_body
