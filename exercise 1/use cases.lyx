@@ -67,40 +67,190 @@ Use cases
 Use case: Trade
 \end_layout
 
-\begin_layout Itemize
-Name
+\begin_layout Paragraph
+Description 
 \end_layout
 
-\begin_layout Itemize
-Description
+\begin_layout Standard
+Two players can trade items with each other when both are inside the game.
+ 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Paragraph
 Actors
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+Two players.
+\end_layout
+
+\begin_layout Paragraph
 Preconditions
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+Player who initializes trade must be logged in to the game.
+ Player is not trading.
+\end_layout
+
+\begin_layout Paragraph
 Main Scenarios
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
+One player initializes the trade.
+\end_layout
+
+\begin_layout Enumerate
+Player Interaction is initialized by the system (use case).
+\end_layout
+
+\begin_layout Enumerate
+The other player accepts the trade.
+\end_layout
+
+\begin_layout Enumerate
+Both players select the items they want to trade.
+\end_layout
+
+\begin_layout Enumerate
+Both players agree on the selected items.
+\end_layout
+
+\begin_layout Enumerate
+System tranfers the items to the respective players' inventories.
+\end_layout
+
+\begin_layout Enumerate
+Player Interaction ends the trade (use case).
+\end_layout
+
+\begin_layout Paragraph
 Alternative Scenarios
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
+Trade is cancelled.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The system cancels the trade.
+\end_layout
+
+\begin_layout Enumerate
+Player Interaction ends.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Players are not in the same room.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Trade is not initialized by Player Interaction.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
 Postconditions
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+If the main scenario is completed then the items agreed upon in the trade
+ are transfered to the other player's inventory.
+\end_layout
+
+\begin_layout Paragraph
 Notes
 \end_layout
 
+\begin_layout Standard
+Trade can be cancelled for the following reasons:
+\end_layout
+
+\begin_layout Enumerate
+A player is invalidated by Player Interaction.
+\end_layout
+
+\begin_layout Enumerate
+A player requests to cancel the trade.
+\end_layout
+
+\begin_layout Enumerate
+A player does not have enough room in his/her inventory.
+\end_layout
+
 \begin_layout Section
-Use case: Join game
+Use case: Login
+\end_layout
+
+\begin_layout Paragraph
+Description 
+\end_layout
+
+\begin_layout Standard
+A player can log in to the game server and subsequently join the game.
+\end_layout
+
+\begin_layout Paragraph
+Actors
+\end_layout
+
+\begin_layout Standard
+One player.
+\end_layout
+
+\begin_layout Paragraph
+Preconditions
+\end_layout
+
+\begin_layout Standard
+Player is not logged in.
+ Player is registered.
+\end_layout
+
+\begin_layout Paragraph
+Main Scenarios
+\end_layout
+
+\begin_layout Enumerate
+Player requests login.
+\end_layout
+
+\begin_layout Enumerate
+Player inputs credentials.
+\end_layout
+
+\begin_layout Enumerate
+System verifies player credentials.
+\end_layout
+
+\begin_layout Enumerate
+Player joins game (use case).
+\end_layout
+
+\begin_layout Paragraph
+Alternative Scenarios
+\end_layout
+
+\begin_layout Enumerate
+Player credentials are not accepted.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Player is not allowed to log in to game.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Postconditions
+\end_layout
+
+\begin_layout Standard
+If main scenario is completed then player is in the game.
 \end_layout
 
 \end_body
