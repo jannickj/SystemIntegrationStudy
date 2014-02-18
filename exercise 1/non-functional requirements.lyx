@@ -1,0 +1,144 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Non-functional requirements
+\end_layout
+
+\begin_layout Standard
+NOTE: REMEMBER THAT THE REQUIREMENTS SHOULD BE MEASURABLE
+\end_layout
+
+\begin_layout Paragraph
+Efficiency requirements
+\end_layout
+
+\begin_layout Standard
+Notes:
+\end_layout
+
+\begin_layout Enumerate
+Mostly real-time response time
+\end_layout
+
+\begin_layout Enumerate
+Application should not be slow (needs some kind of measure)
+\end_layout
+
+\begin_layout Enumerate
+Resource requirements on device (space, time)
+\end_layout
+
+\begin_layout Paragraph
+Environmental requirements
+\end_layout
+
+\begin_layout Standard
+Notes:
+\end_layout
+
+\begin_layout Enumerate
+Which devices the app run on (phone, tablet, web, pc)
+\end_layout
+
+\begin_layout Enumerate
+And OS's
+\end_layout
+
+\begin_layout Paragraph
+Usability requirements
+\end_layout
+
+\begin_layout Standard
+Notes:
+\end_layout
+
+\begin_layout Enumerate
+UI requirements (GUI, console, scalable UI reqs stuff, graphics or text)
+\end_layout
+
+\begin_layout Enumerate
+Ease of use (simple interface, complexity of interactions)
+\end_layout
+
+\begin_layout Paragraph
+Security requirements
+\end_layout
+
+\begin_layout Standard
+Notes:
+\end_layout
+
+\begin_layout Enumerate
+Credentials storage
+\end_layout
+
+\begin_layout Enumerate
+Credentials transfer
+\end_layout
+
+\begin_layout Enumerate
+Valid credential requirements (password length, legit username characters,
+ etc.)
+\end_layout
+
+\end_body
+\end_document
