@@ -63,35 +63,8 @@
 Non-functional requirements
 \end_layout
 
-\begin_layout Standard
-NOTE: REMEMBER THAT THE REQUIREMENTS SHOULD BE MEASURABLE
-\end_layout
-
-\begin_layout Standard
-Note: A functional requirement describes WHAT a software system should do,
- while non-functional requirements place constraints on HOW the system will
- do so.
-\end_layout
-
 \begin_layout Paragraph
 Environmental requirements
-\end_layout
-
-\begin_layout Standard
-Notes:
-\end_layout
-
-\begin_layout Enumerate
-Which devices the app run on (phone, tablet, web, pc) <--- is this a non-functio
-nal requirement?
-\end_layout
-
-\begin_layout Enumerate
-And OS's <--- is this a non-functional requirement?
-\end_layout
-
-\begin_layout Standard
-Example???:
 \end_layout
 
 \begin_layout Standard
@@ -99,35 +72,10 @@ All current popular mobile OS's should be supported by the user application;
  Windows Phone, Android, and iOS.
  The application should be able to run on both smartphone- and tablet-sized
  devices.
- <--- IS THIS NON-FUNCTIONAL??
 \end_layout
 
 \begin_layout Paragraph
 Efficiency requirements
-\end_layout
-
-\begin_layout Standard
-Notes:
-\end_layout
-
-\begin_layout Enumerate
-Mostly real-time response time
-\end_layout
-
-\begin_layout Enumerate
-Application should not be slow (needs some kind of measure)
-\end_layout
-
-\begin_layout Enumerate
-Resource requirements on device (space, time)
-\end_layout
-
-\begin_layout Enumerate
-Scalability
-\end_layout
-
-\begin_layout Standard
-Example???:
 \end_layout
 
 \begin_layout Standard
@@ -146,22 +94,6 @@ Usability requirements
 \end_layout
 
 \begin_layout Standard
-Notes:
-\end_layout
-
-\begin_layout Enumerate
-UI requirements (GUI, console, scalable UI reqs stuff, graphics or text)
-\end_layout
-
-\begin_layout Enumerate
-Ease of use (simple interface, complexity of interactions)
-\end_layout
-
-\begin_layout Standard
-Example???:
-\end_layout
-
-\begin_layout Standard
 New players should be able to understand all the UI elements, both before
  and after joining a game, in less than 15 minutes of playtime.
  The user should be able to navigate menus and play the game using at most
@@ -170,27 +102,6 @@ New players should be able to understand all the UI elements, both before
 
 \begin_layout Paragraph
 Security requirements
-\end_layout
-
-\begin_layout Standard
-Notes:
-\end_layout
-
-\begin_layout Enumerate
-Credentials storage
-\end_layout
-
-\begin_layout Enumerate
-Credentials transfer
-\end_layout
-
-\begin_layout Enumerate
-Valid credential requirements (password length, legit username characters,
- etc.)
-\end_layout
-
-\begin_layout Standard
-Example???:
 \end_layout
 
 \begin_layout Standard
