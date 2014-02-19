@@ -110,11 +110,23 @@ The other player accepts the trade.
 \end_layout
 
 \begin_layout Enumerate
-Both players select the items they want to trade.
+First player selects item from inventory to trade.
 \end_layout
 
 \begin_layout Enumerate
-Both players agree on the selected items.
+Second player selects item from inventory to trade.
+\end_layout
+
+\begin_layout Enumerate
+The system presents the selected items to the players.
+\end_layout
+
+\begin_layout Enumerate
+First player agrees on the selected items.
+\end_layout
+
+\begin_layout Enumerate
+Second player agrees on the selected items.
 \end_layout
 
 \begin_layout Enumerate
