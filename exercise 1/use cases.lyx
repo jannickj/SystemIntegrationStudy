@@ -158,8 +158,8 @@ Postconditions
 \end_layout
 
 \begin_layout Standard
-If the main scenario is completed then the items agreed upon in the trade
- are transfered to the other player's inventory.
+The items agreed upon in the trade are transfered to the other player's
+ inventory.
 \end_layout
 
 \begin_layout Paragraph
@@ -250,7 +250,7 @@ Postconditions
 \end_layout
 
 \begin_layout Standard
-If main scenario is completed then player is in the game.
+The player is in the game.
 \end_layout
 
 \end_body
