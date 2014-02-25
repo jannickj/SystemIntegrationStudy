@@ -65,8 +65,9 @@ Acceptance test Fit table for Trade use case
 
 \begin_layout Standard
 First player p1 requests trade with player p2.
- Then p2 accepts the request, and ...
- ? See table 
+ Then p2 accepts the request, and each add items to be traded until both
+ accept or the trade is cancelled.
+ See table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Fit-table-trade"
