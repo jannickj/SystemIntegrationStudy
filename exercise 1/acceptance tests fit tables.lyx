@@ -59,13 +59,21 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Subsubsection
 Acceptance test Fit table for Trade use case
 \end_layout
 
 \begin_layout Standard
 First player p1 requests trade with player p2.
- Then p2 accepts the request, and 
+ Then p2 accepts the request, and ...
+ ? See table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Fit-table-trade"
+
+\end_inset
+
+ for the fit table.
 \end_layout
 
 \begin_layout Standard
@@ -75,6 +83,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="5">
 <features tabularvalignment="middle">
@@ -84,7 +93,7 @@ status open
 <column alignment="left" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -705,8 +714,25 @@ item1
 \begin_inset Caption
 
 \begin_layout Plain Layout
+Acceptance test fit table for the 
+\begin_inset Quotes eld
+\end_inset
 
-\end_layout
+Trade
+\begin_inset Quotes erd
+\end_inset
+
+ use case (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Use-case:-Trade"
+
+\end_inset
+
+ for the detailed use case)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Fit-table-trade"
 
 \end_inset
 
@@ -718,8 +744,13 @@ item1
 
 \end_layout
 
-\begin_layout Section
-Acceptance test Fit table for Login use case
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Acceptance Test Fit Table for Login Use Case
 \end_layout
 
 \begin_layout Standard
@@ -733,6 +764,14 @@ mypassword
 
 , which is correct for p1.
  P1 is then logged into the game.
+ See table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Fit-table-login"
+
+\end_inset
+
+ for the fit table.
 \end_layout
 
 \begin_layout Standard
@@ -742,6 +781,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
 <features tabularvalignment="middle">
@@ -751,7 +791,7 @@ status open
 <column alignment="left" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1003,6 +1043,28 @@ true
 \begin_inset Caption
 
 \begin_layout Plain Layout
+Acceptance test fit table for the 
+\begin_inset Quotes eld
+\end_inset
+
+Login
+\begin_inset Quotes erd
+\end_inset
+
+ use case (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Use-case:-Login"
+
+\end_inset
+
+ for the detailed use case)
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Fit-table-login"
+
+\end_inset
+
 
 \end_layout
 

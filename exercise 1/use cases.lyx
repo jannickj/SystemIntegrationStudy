@@ -59,12 +59,15 @@
 
 \begin_body
 
-\begin_layout Part
-Use cases
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsubsection
 Use case: Trade
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Use-case:-Trade"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -169,8 +172,15 @@ A player requests to cancel the trade.
 A player does not have enough room in his/her inventory.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsubsection
 Use case: Login
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Use-case:-Login"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph

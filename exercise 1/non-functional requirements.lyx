@@ -59,11 +59,7 @@
 
 \begin_body
 
-\begin_layout Part
-Non-functional requirements
-\end_layout
-
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Environmental requirements
 \end_layout
 
@@ -74,7 +70,7 @@ All current popular mobile OS's should be supported by the user application;
  devices.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Efficiency requirements
 \end_layout
 
@@ -89,7 +85,7 @@ The response time from the server should not exceed 1 ms, unless the server
  suffering performance degradation.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Usability requirements
 \end_layout
 
@@ -100,7 +96,7 @@ New players should be able to understand all the UI elements, both before
  two fingers as input on touch-enabled devices.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Security requirements
 \end_layout
 
