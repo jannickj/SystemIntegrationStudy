@@ -119,5 +119,13 @@ A room that takes a player to the next level.
  On the final level it ends the game.
 \end_layout
 
+\begin_layout Paragraph
+Dungeon
+\end_layout
+
+\begin_layout Standard
+A dungeon consists of multiple levels.
+\end_layout
+
 \end_body
 \end_document
