@@ -60,11 +60,27 @@
 \begin_body
 
 \begin_layout Paragraph
+Client
+\end_layout
+
+\begin_layout Standard
+A real world person presented as an avatar in the game.
+\end_layout
+
+\begin_layout Paragraph
+Avatar
+\end_layout
+
+\begin_layout Standard
+A character in the game representing a real world person.
+\end_layout
+
+\begin_layout Paragraph
 Player
 \end_layout
 
 \begin_layout Standard
-A real world person represented by a character in the game.
+The concept of a client and his avatar.
 \end_layout
 
 \begin_layout Paragraph

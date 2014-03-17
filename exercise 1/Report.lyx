@@ -251,5 +251,25 @@ filename "acceptance tests fit tables.lyx"
 
 \end_layout
 
+\begin_layout Section
+Design
+\end_layout
+
+\begin_layout Subsection
+Rough System Design
+\end_layout
+
+\begin_layout Subsection
+Component Design
+\end_layout
+
+\begin_layout Subsection
+Detailed Class Design
+\end_layout
+
+\begin_layout Subsection
+Behaviour Design
+\end_layout
+
 \end_body
 \end_document
