@@ -61,6 +61,13 @@
 
 \begin_layout Standard
 \begin_inset CommandInset include
+LatexCommand include
+filename "frontpage.tex"
+
+\end_inset
+
+
+\begin_inset CommandInset include
 LatexCommand input
 filename "exercise 1/Report.lyx"
 
