@@ -65,7 +65,7 @@ in exchange for single tickets.
 	\item The cashier selects the customers vehicle type on the touch screen.
 	\item The price for the relevant vehicle type is displayed on the screen.
 	\item The cashier opens the cash register
-	\item The cashier opens the cash register
+	\item The cashier closes the cash register
 	\item The ticket is printed to the customer
 	\item The barrier opens
 	\item The barrier closes when the vehicle has passed through
@@ -73,7 +73,7 @@ in exchange for single tickets.
 
 \textit{Alternative Scenarios: }
 \begin{enumerate}
-	\item The cashier is not present, or the customer wants to pay with their credit card
+	\item The cashier is not present, or the cash payment fails, or the customer wants to pay with their credit card
 		\begin{enumerate}
 			\item The customer selects his vehicle type
 			\item The price for a single ticket is presented to the customer
@@ -84,14 +84,18 @@ in exchange for single tickets.
 			\item The barrier closes when the vehicle has passed through
 		\end{enumerate}
 		
-	\item The payment does not succeed
+	\item The credit card payment does not succeed 
 		\begin{enumerate}
 			\item Restart the scenario.
 		\end{enumerate}
 
  \end{enumerate} 
  
- \textit{Note :} We assume that the customer hands over the correct amount of money to the cashier, and that the cashier deposits the money.
+ \textit{Note:} 
+ \begin{enumerate}
+ \item We assume that the customer hands over the correct amount of money to the cashier, and that the cashier deposits the money.
+ \item The cash payment fails if the customer does not have enough money.
+ \end{enumerate}
 
 
 \subsection{Non-Functional Requirements}
