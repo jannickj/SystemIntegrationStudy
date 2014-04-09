@@ -543,5 +543,64 @@ name "fig:System-BSM"
 
 \end_layout
 
+\begin_layout Subsection
+OCL Constraints
+\end_layout
+
+\begin_layout Standard
+See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OCL-constraints"
+
+\end_inset
+
+ for the OCL constraints.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "OCL.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+OCL constraints
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OCL-constraints"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
