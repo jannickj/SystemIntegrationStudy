@@ -1,0 +1,29 @@
+\documentclass{report}
+\begin{document}
+\section{Use cases}
+\subsection{Check out single ticket}
+\paragraph{Description}
+A customer can drive up to a toll lane, validate a single ticket and leave the motorway. 
+\paragraph{Actors}
+The customer and a cashier.
+\paragraph{Preconditions}
+Customer has approached the barrier at single ticket check out lane. If the customer possesses a ticket he has inserted it into the single ticket card reader. 
+\paragraph{Main scenario}
+\begin{enumerate}
+\item[1.] Toll lane system validates the ticket. 
+\item[2.] Toll lane system opens the  barrier.
+\item[3.] Toll lane system waits for customer to leave toll lane.
+\item[4.] Toll lane system closes the barrier.
+\end{enumerate}
+\paragraph{Alternative scenario}
+\begin{enumerate}
+\item[1.] Toll lane system cannot validate ticket or customer does not have a ticket.
+\item[2.] Cashier decides how to check out the vehicle.
+\item[3.] Toll lane system opens barrier.
+\item[4.] Toll lane system waits for customer to leave toll lane.
+\item[5.] Toll lane system closes the barrier.
+\end{enumerate}
+\paragraph{Postconditions}
+The customer has successfully checked out and left the motorway.
+
+\end{document}
