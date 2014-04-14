@@ -42,6 +42,60 @@ in exchange for single tickets.
 \item [{Administrative~Operations}]~
 \end{description}
 
+\subsubsection {Use Case Diagram}
+
 \subsection{Functional Requirements}
+
+\subsubsection{Activity Diagram}
+
+\subsubsection{Detailed Use Case}
+
+\textit {Name: } Check in single ticket
+
+\textit {Description: } A customer in a vehicle enters the toll lane and buys a single ticket.
+
+\textit {Actors: } A customer and a cashier.
+
+\textit {Preconditions: }  The customer is in a cash lane
+
+\textit{Main Scenario: }
+
+\begin{enumerate}
+	\item The cashier identifies themself as being a cashier by using the touchscreen
+	\item The cashier selects the customers vehicle type on the touch screen.
+	\item The price for the relevant vehicle type is displayed on the screen.
+	\item The cashier opens the cash register
+	\item The cashier closes the cash register
+	\item The ticket is printed to the customer
+	\item The barrier opens
+	\item The barrier closes when the vehicle has passed through
+\end{enumerate}
+
+\textit{Alternative Scenarios: }
+\begin{enumerate}
+	\item The cashier is not present, or the cash payment fails, or the customer wants to pay with their credit card
+		\begin{enumerate}
+			\item The customer selects his vehicle type
+			\item The price for a single ticket is presented to the customer
+			\item The customer pays by using the card reader
+			\item The card reader processes the payment successfully
+			\item The ticket is printed
+			\item The barrier opens
+			\item The barrier closes when the vehicle has passed through
+		\end{enumerate}
+		
+	\item The credit card payment does not succeed 
+		\begin{enumerate}
+			\item Restart the scenario.
+		\end{enumerate}
+
+ \end{enumerate} 
+ 
+ \textit{Note:} 
+ \begin{enumerate}
+ \item We assume that the customer hands over the correct amount of money to the cashier, and that the cashier deposits the money.
+ \item The cash payment fails if the customer does not have enough money.
+ \end{enumerate}
+
 
 \subsection{Non-Functional Requirements}
