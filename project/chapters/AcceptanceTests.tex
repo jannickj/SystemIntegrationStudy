@@ -9,21 +9,19 @@ start & CheckInSingleTicket & \tabularnewline
 \hline 
 check & in a cash lane & \tabularnewline
 \hline 
-action & identify self & cashier\tabularnewline
-\hline 
 press & vehicle type & cashier\tabularnewline
 \hline 
 check & correct price is displayed & \tabularnewline
 \hline 
-press & open cash register & cashier\tabularnewline
+action & open cash register & cashier\tabularnewline
 \hline 
-press & close cash register & cashier\tabularnewline
+action & close cash register & cashier\tabularnewline
 \hline 
 check & ticket has been printed & \tabularnewline
 \hline 
 check & barrier is open & \tabularnewline
 \hline 
-action & pass through barrier & customer\tabularnewline
+action & leaves toll lane & customer\tabularnewline
 \hline 
 check & barrier is closed & \tabularnewline
 \hline 
@@ -37,7 +35,7 @@ check & barrier is closed & \tabularnewline
 \hline 
 ActionFixture &  & \tabularnewline
 \hline 
-start & CheckInSingleTicket & \tabularnewline
+start & CheckInSingleTicketAlt & \tabularnewline
 \hline 
 press & vehicle type & customer\tabularnewline
 \hline 
@@ -51,7 +49,7 @@ check & ticket has been printed & \tabularnewline
 \hline 
 check & barrier is open & \tabularnewline
 \hline 
-action & pass through barrier & customer\tabularnewline
+action & leaves toll lane & customer\tabularnewline
 \hline 
 check & barrier is closed & \tabularnewline
 \hline 

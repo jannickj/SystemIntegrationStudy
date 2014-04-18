@@ -68,7 +68,7 @@ Description
 \end_layout
 
 \begin_layout Standard
-A car with a toll tag checks in at an express lane.
+A customer with a toll tag checks in at an express lane.
 \end_layout
 
 \begin_layout Paragraph
@@ -76,7 +76,7 @@ Actors
 \end_layout
 
 \begin_layout Standard
-One car c1.
+A customer.
 \end_layout
 
 \begin_layout Paragraph
@@ -84,7 +84,8 @@ Preconditions
 \end_layout
 
 \begin_layout Standard
-c1 owns a toll tag which he has in his car, and is in an express lane.
+The customer owns a toll tag which he has in his vehicle, and is in an express
+ lane.
 \end_layout
 
 \begin_layout Paragraph
@@ -92,23 +93,23 @@ Main Scenarios
 \end_layout
 
 \begin_layout Enumerate
-c1 drives up to the barrier, and awaits check-in.
+The customer drives up to the barrier.
 \end_layout
 
 \begin_layout Enumerate
-the toll lane authenticates c1.
+The system checks in the customer.
 \end_layout
 
 \begin_layout Enumerate
-The barrier opens.
+The system opens the barrier.
 \end_layout
 
 \begin_layout Enumerate
-c1 drives through the lane.
+The customer leaves the toll lane.
 \end_layout
 
 \begin_layout Enumerate
-The barrier closes.
+The system closes the barrier.
 \end_layout
 
 \begin_layout Paragraph
@@ -116,17 +117,17 @@ Alternative Scenarios
 \end_layout
 
 \begin_layout Enumerate
-Faulty toll tag
+Faulty toll tag.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-The toll station personal is informed.
+A cashier decides how to check out the vehicle.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-c1 has no toll tag
+The customer has no toll tag.
 \end_layout
 
 \begin_deeper
@@ -140,7 +141,7 @@ Postconditions
 \end_layout
 
 \begin_layout Standard
-c1 has been check-in and allowed onto the motorway.
+The customer has been checked in and allowed onto the motorway.
 \end_layout
 
 \begin_layout Paragraph
@@ -152,7 +153,7 @@ A toll tag is faulty if
 \end_layout
 
 \begin_layout Enumerate
-the toll tag is not registered.
+The toll tag is not registered.
 \end_layout
 
 \begin_layout Enumerate
