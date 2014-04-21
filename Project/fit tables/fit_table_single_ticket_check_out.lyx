@@ -79,8 +79,9 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="5">
+<lyxtabular version="3" rows="8" columns="6">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -92,6 +93,15 @@ status open
 
 \begin_layout Plain Layout
 fit.ActionFixture
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -138,7 +148,16 @@ fit.ActionFixture
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check
+start
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CheckOutSingleTicket
 \end_layout
 
 \end_inset
@@ -147,7 +166,7 @@ Check
 \begin_inset Text
 
 \begin_layout Plain Layout
-Customer has approached barrier
+
 \end_layout
 
 \end_inset
@@ -185,7 +204,16 @@ Customer has approached barrier
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check
+action
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+insert ticket into card reader
 \end_layout
 
 \end_inset
@@ -194,7 +222,7 @@ Check
 \begin_inset Text
 
 \begin_layout Plain Layout
-Customer has inserted ticket into card reader
+customer
 \end_layout
 
 \end_inset
@@ -232,7 +260,16 @@ Customer has inserted ticket into card reader
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check
+check
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single ticket is valid
 \end_layout
 
 \end_inset
@@ -241,7 +278,7 @@ Check
 \begin_inset Text
 
 \begin_layout Plain Layout
-Single ticket is valid
+
 \end_layout
 
 \end_inset
@@ -279,7 +316,16 @@ Single ticket is valid
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check
+check
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+barrier is open
 \end_layout
 
 \end_inset
@@ -288,7 +334,7 @@ Check
 \begin_inset Text
 
 \begin_layout Plain Layout
-Barrier is open
+
 \end_layout
 
 \end_inset
@@ -326,7 +372,16 @@ Barrier is open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Action
+action
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+leaves the lane
 \end_layout
 
 \end_inset
@@ -335,7 +390,7 @@ Action
 \begin_inset Text
 
 \begin_layout Plain Layout
-Customer leaves the lane
+customer
 \end_layout
 
 \end_inset
@@ -373,7 +428,16 @@ Customer leaves the lane
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check
+check
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+customer has had time to leave the lane
 \end_layout
 
 \end_inset
@@ -382,7 +446,7 @@ Check
 \begin_inset Text
 
 \begin_layout Plain Layout
-Customer has had time to leave the lane
+
 \end_layout
 
 \end_inset
@@ -420,7 +484,16 @@ Customer has had time to leave the lane
 \begin_inset Text
 
 \begin_layout Plain Layout
-Check
+check
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+barrier is closed
 \end_layout
 
 \end_inset
@@ -429,7 +502,7 @@ Check
 \begin_inset Text
 
 \begin_layout Plain Layout
-Barrier is closed
+
 \end_layout
 
 \end_inset
