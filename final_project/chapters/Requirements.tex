@@ -1,0 +1,104 @@
+\subsection {Domain Analysis}
+
+\subsubsection {Glossary}
+
+\begin{description}
+\item [{Toll~tag}] A toll tag is a physical device which will admit passage
+through an express lane when equipped on a vehicle. Toll tags need
+to be ordered by customers, and can only be used by one vehicle. The
+toll system automatically computes the fare of the vehicle based on
+the distance travelled between check in and check out.
+
+\item [{Single~ticket}] Single tickets can be purchased in a cash or credit
+card lane, and are valid for 24 hours.
+
+\item [{Toll~Station}] A toll station is a collection of toll lanes. A
+station manager is connected to every toll station and can view \emph{statistical
+reports}, as well as view and modify customer data.
+
+\item [{Statistical~Report}] Each toll station records which vehicles
+purchased single tickets and used toll tags, along with the type of
+the vehicle. A statistical report is a writeout of this information
+for a given time period.
+
+\item [{Express~Lane}] An express lane will automatically admit passage
+to vehicles equipped with a toll tag. The vehicle will be registered
+as having passed through the lane at the given time.
+
+\item [{Credit~Card~Lane}] In a credit card lane, the user can use their
+credit card to purchase a single ticket.
+
+\item [{Cash~Lane}] A cash lane is manned by a cashier, who accepts cash
+payments as well as credit cards. When a cashier mans a credit card
+lane, it becomes a cash lane.
+
+\item [{Cashier}] A cashier operates a cash lane and accepts cash payment
+in exchange for single tickets.
+
+\item [{Customer}]~
+
+\item [{Rate}]~
+
+\item [{Administrative~Operations}]~
+\end{description}
+
+\subsubsection {Use Case Diagram}
+
+\subsection{Functional Requirements}
+
+\subsubsection{Activity Diagram}
+
+\subsubsection{Detailed Use Case}
+
+\input{"use cases/UseCaseBuyTollTag.tex"}
+
+\textit {Name: } Check in single ticket
+
+\textit {Description: } A customer in a vehicle enters the toll lane and buys a single ticket.
+
+\textit {Actors: } A customer and a cashier.
+
+\textit {Preconditions: }  The customer is in a cash lane.
+
+\textit{Main Scenario: }
+
+\begin{enumerate}
+	\item The cashier selects the customer's vehicle type.
+	\item The system displays the price for the vehicle.
+	\item The cashier opens the cash register.
+	\item The cashier closes the cash register.
+	\item The system prints the ticket.
+	\item The system opens the barrier.
+	\item The customer leaves the toll lane.
+	\item The system closes the barrier.
+\end{enumerate}
+
+\textit{Alternative Scenarios: }
+\begin{enumerate}
+	\item The cashier is not present, the cash payment fails, or the customer wants to pay with their credit card.
+		\begin{enumerate}
+			\item The customer selects his vehicle type
+			\item The system presents the price for a single ticket.
+			\item The customer pays using the card reader.
+			\item The system processes the payment successfully.
+			\item The system prints the ticket.
+			\item The system opens the barrier.
+			\item The customer leaves the toll lane.
+			\item The system closes the barrier.
+		\end{enumerate}
+		
+	\item The credit card payment does not succeed. 
+		\begin{enumerate}
+			\item Restart the scenario.
+		\end{enumerate}
+
+ \end{enumerate} 
+ 
+ \textit{Note:} 
+ \begin{enumerate}
+ \item We assume that the customer hands over the correct amount of money to the cashier, and that the cashier deposits the money.
+ \item The cash payment fails if the customer does not have enough money.
+ \end{enumerate}
+
+
+\subsection{Non-Functional Requirements}
