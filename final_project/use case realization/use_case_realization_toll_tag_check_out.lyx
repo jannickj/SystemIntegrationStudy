@@ -67,7 +67,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename img/sequence_diagrams/sequence_diagram_toll_tag_check_out.png
+	filename ../report/img/sequence_diagrams/sequence_diagram_toll_tag_check_out.png
 	lyxscale 20
 	width 100text%
 
