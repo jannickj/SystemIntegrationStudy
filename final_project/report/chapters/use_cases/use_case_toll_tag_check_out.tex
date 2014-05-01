@@ -1,0 +1,43 @@
+\paragraph{Description }
+
+A customer with a toll tag checks out at an express lane.
+
+
+\paragraph{Actors}
+
+A customer.
+
+
+\paragraph{Preconditions}
+
+The customer owns a toll tag which he has in his car, is in an express
+lane and has checked in.
+
+
+\paragraph{Main Scenarios}
+\begin{enumerate}
+\item The customer drives up to the barrier, and awaits check-out.
+\item The system checks out the customer.
+\item The system opens the barrier.
+\item The customer leaves the toll lane.
+\item The system closes the barrier.
+\end{enumerate}
+
+\paragraph{Alternative Scenarios}
+\begin{enumerate}
+\item Toll tag has not been checked in.
+
+\begin{enumerate}
+\item The toll station personal is informed.
+\end{enumerate}
+\item c1 has no toll tag
+
+\begin{enumerate}
+\item The barrier does not open.
+\end{enumerate}
+\end{enumerate}
+
+\paragraph{Postconditions}
+
+The customer has been checked out and allowed out of the lane.
+
