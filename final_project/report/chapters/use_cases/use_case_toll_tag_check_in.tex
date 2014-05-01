@@ -1,0 +1,51 @@
+\paragraph{Description }
+
+A customer with a toll tag checks in at an express lane.
+
+
+\paragraph{Actors}
+
+A customer.
+
+
+\paragraph{Preconditions}
+
+The customer owns a toll tag which he has in his vehicle, and is in
+an express lane.
+
+
+\paragraph{Main Scenarios}
+\begin{enumerate}
+\item The customer drives up to the barrier.
+\item The system checks in the customer.
+\item The system opens the barrier.
+\item The customer leaves the toll lane.
+\item The system closes the barrier.
+\end{enumerate}
+
+\paragraph{Alternative Scenarios}
+\begin{enumerate}
+\item Faulty toll tag.
+
+\begin{enumerate}
+\item A cashier decides how to check out the vehicle.
+\end{enumerate}
+\item The customer has no toll tag.
+
+\begin{enumerate}
+\item The barrier does not open.
+\end{enumerate}
+\end{enumerate}
+
+\paragraph{Postconditions}
+
+The customer has been checked in and allowed onto the motorway.
+
+
+\paragraph{Notes}
+
+A toll tag is faulty if
+\begin{enumerate}
+\item The toll tag is not registered.
+\item The toll tag has expired.\end{enumerate}
+
