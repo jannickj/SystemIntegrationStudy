@@ -1,0 +1,56 @@
+\subsection{Check-In Single Ticket Main Scenario}
+
+\begin{figure}
+\centerline{\includegraphics[width=\textwidth]{"img/sequence_diagrams/SequenceDiagram_CheckInSingleTicket_cash"}}
+\caption{Sequence diagram for main scenario of use case "Check-In Single Ticket"}
+\label{fig:seq_single_ticket_main}
+\end{figure}
+
+\begin{enumerate}
+\item The customer approaches the lane.
+\item The cashier selects the customer's vehicle type, \texttt{vt}, on the touch screen using \texttt{selectVehicleType(vt)}.
+	\begin{enumerate}
+	\item This results in the touch screen calling \texttt{getVehiclePrice(vt)} on \texttt{TollLaneNormalCheckIn}, ie. the toll lane computer. 
+	\item The \texttt{price} is returned and is presented to the cashier by being shown on the touch screen, 
+	\item The toll lane computer waits for the the customer to interact with the credit card reader, or the cashier to close the cash register.
+	\end{enumerate}
+\item The cashier recieves appropriate cash payment from the customer, and deposits it in the cash register, (calling \texttt{depositCash()})
+	\begin{enumerate}
+	\item The cash register calls the \texttt{cashReceived(price)} method on the toll lane computer.
+	\item \label{generate_ticket} The toll lane computer generates a ticket (\texttt{ticket}) using the \texttt{generateTicket(price)} method, which constructs a ticket with the current time stamp and a unique ID based on the toll lane's ID in the system.
+	\item The station server is informed of the sale when the toll lane computer calls \texttt{ss.ticketSold(ticket)}.
+		\begin{enumerate}
+		\item The station server stores the ticket in the ticket database.
+		\item The station server informs the enterprise server of the sale by calling \texttt{es.ticketSold(ticket)}.
+		\end{enumerate}
+	\item The generated ticket is sent to the ticket printer using the \texttt{printer.printTicket(ticket)} method. The ticket printer prints the ticket.
+	\item The toll lane computer calls \texttt{barrier.open()}, causing the barrier to open.
+	\item The toll lane computer delays execution for a fixed time, allowing the vehicle to pass through.
+	\item The toll lane computer calls \texttt{barrier.close()}.
+	\end{enumerate}
+	
+\end{enumerate}
+
+
+\subsubsection{Check-In Single Ticket Alternative Scenario}
+
+\begin{figure}
+\centerline{\includegraphics[width=\textwidth]{"img/sequence_diagrams/SequenceDiagram_CheckInSingleTicket_card"}}
+\caption{Sequence diagram for alternative scenario of use case "Check-In Single Ticket"}
+\label{fig:seq_single_ticket_alt}
+\end{figure}
+
+\begin{enumerate}
+\item The customer approaches the lane.
+\item The customer selects their vehicle type, \texttt{vt}, on the touch screen using \texttt{selectVehicleType(vt)}.
+	\begin{enumerate}
+	\item The touch screen calls \texttt{getVehiclePrice(vt)} on the toll lane computer, which returns the price for the vehicle.
+	\item The touch screen shows the returned price.
+	\end{enumerate}
+\item The customer presents his credit card \texttt{cardInfo} to the credit card reader (via \texttt{swipeCard(cardInfo)}).
+	\item The credit card reader calls the method \texttt{cardInfoReceived(cardInfo)} provided by the toll lane computer.
+		\item The toll lane computer calls \texttt{bank.withdraw(cardInfo, price)}, which returns \texttt{true} as the money have successfully been transferred.
+		\item The execution proceeds as in the use case validation for the main scenario from \autoref{generate_ticket}.
+		
+	
+\end{enumerate}

@@ -1,0 +1,20 @@
+\subsection{Check-In Single Ticket Main Scenario}
+
+\begin{figure}
+\centerline{\includegraphics[width=\textwidth]{"img/sequence_diagrams/sequence_diagram_buy_toll_tag"}}
+\caption{Sequence diagram for main scenario of use case "Buy Toll Tag"}
+\label{fig:seq_buy_toll_tag}
+\end{figure}
+
+\begin{enumerate}
+\item The customer fills out the form on the webpage with his personal (\texttt{personalData}), vehicular (\texttt{vehicleData}), and credit card (\texttt{bankData}) information.
+\item The customer submits the form.
+	\begin{enumerate}
+	\item The webserver calls \texttt{fillOutForm(personalData, vehicleData, bankData)} on the enterprise server.
+		\begin{enumerate}
+		\item The enterprise server requests the bank to transfer money from the customer's account using \texttt{withdraw(bankData, tollTagPrice)} on the bank. The call returns \texttt{true}, as the payment succeeds.
+		\item The customer data is stored in a database when the enterprise server calls \texttt{storeCustomerData(personalData, vehicleData, bankData)}.
+		\item The enterprise server calls \texttt{submitTollTagOrder(personalData, vehicleData, bankData)} which orders a physical toll tag to be encoded with a generated ID and mailed to the customer.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
