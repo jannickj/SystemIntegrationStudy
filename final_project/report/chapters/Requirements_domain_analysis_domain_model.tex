@@ -1,0 +1,8 @@
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{img/domain_model/domain_model.png}
+\caption{a class diagram depicting our domain model}
+\label{fig:domain_model}
+\end{figure}
+
+In our domain model in {\autoref{fig:domain_model}}, we have a computer at each toll lane that controls all the components that are part of that lane. All these lane computers are then connected to a station server which controls what goes on at the station. All of the stations for the entire system are then connected to a single enterprise server which manages communication between the stations. For sale of tickets and toll tags our lanes and enterprise server is able to communicate with the bank in order to process those sales.
