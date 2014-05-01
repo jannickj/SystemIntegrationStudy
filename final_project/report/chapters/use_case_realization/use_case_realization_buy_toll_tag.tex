@@ -1,7 +1,7 @@
 \subsubsection{Buy Toll Tag Use Case}
 
 \begin{figure}
-\centerline{\includegraphics[width=\textwidth]{"img/sequence_diagrams/sequence_diagram_buy_toll_tag"}}
+\centerline{\includegraphics[width=1.2\textwidth]{"img/sequence_diagrams/sequence_diagram_buy_toll_tag"}}
 \caption{Sequence diagram for main scenario of use case "Buy Toll Tag"}
 \label{fig:seq_buy_toll_tag}
 \end{figure}
@@ -12,7 +12,8 @@
 	\begin{enumerate}
 	\item The webserver calls \texttt{fillOutForm(personalData, vehicleData, bankData)} on the enterprise server.
 		\begin{enumerate}
-		\item The enterprise server requests the bank to transfer money from the customer's account using \texttt{withdraw(bankData, tollTagPrice)} on the bank, where \texttt{tollTagPrice} is a predefined initial fee for ordering a toll tag. The call returns \texttt{true}, as the payment succeeds.
+		\item The enterprise server requests the bank to transfer money from the customer's account using \texttt{withdraw(bankData, tollTagPrice)} on the bank, where \texttt{tollTagPrice} is a predefined initial fee for ordering a toll tag. 
+		\item The call to \texttt{withdraw(bankData, tollTagPrice)} returns \texttt{true}, as the payment succeeds.
 		\item The customer data is stored in a database when the enterprise server calls \texttt{storeCustomerData(personalData, vehicleData, bankData)}.
 		\item The enterprise server calls \texttt{submitTollTagOrder(personalData, vehicleData, bankData)} which orders a physical toll tag to be encoded with a generated ID and mailed to the customer.
 		\end{enumerate}
