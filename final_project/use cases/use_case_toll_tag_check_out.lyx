@@ -68,7 +68,7 @@ Description
 \end_layout
 
 \begin_layout Standard
-A car with a toll tag checks out at an express lane.
+A customer with a toll tag checks out at an express lane.
 \end_layout
 
 \begin_layout Paragraph
@@ -76,7 +76,7 @@ Actors
 \end_layout
 
 \begin_layout Standard
-One car c1.
+A customer.
 \end_layout
 
 \begin_layout Paragraph
@@ -84,8 +84,8 @@ Preconditions
 \end_layout
 
 \begin_layout Standard
-c1 owns a toll tag which he has in his car, is in an express lane and has
- checked in.
+The customer owns a toll tag which he has in his car, is in an express lane
+ and has checked in.
 \end_layout
 
 \begin_layout Paragraph
@@ -93,23 +93,23 @@ Main Scenarios
 \end_layout
 
 \begin_layout Enumerate
-c1 drives up to the barrier, and awaits check-out.
+The customer drives up to the barrier, and awaits check-out.
 \end_layout
 
 \begin_layout Enumerate
-the toll lane authenticates c1.
+The system checks out the customer.
 \end_layout
 
 \begin_layout Enumerate
-The barrier opens.
+The system opens the barrier.
 \end_layout
 
 \begin_layout Enumerate
-c1 drives through the lane.
+The customer leaves the toll lane.
 \end_layout
 
 \begin_layout Enumerate
-The barrier closes.
+The system closes the barrier.
 \end_layout
 
 \begin_layout Paragraph
@@ -141,7 +141,7 @@ Postconditions
 \end_layout
 
 \begin_layout Standard
-c1 has been checked out and allowed out of the lane.
+The customer has been checked out and allowed out of the lane.
 \end_layout
 
 \end_body
