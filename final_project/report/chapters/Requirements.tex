@@ -5,7 +5,48 @@
 \subsubsection{Domain Model}
 \input{chapters/Requirements_domain_analysis_domain_model}
 
+\begin{description}
+\item [{Toll~tag}] A toll tag is a physical device which will admit passage
+through an express lane when equipped on a vehicle. Toll tags need
+to be ordered by customers, and can only be used by one vehicle. The
+toll system automatically computes the fare of the vehicle based on
+the distance traveled between check in and check out.
 
+
+\item [{Toll~Station}] A toll station is a collection of toll lanes. A
+station manager is connected to every toll station and can view \emph{statistical
+reports}, as well as view and modify customer data.
+
+\item [{Statistical~Report}] Each toll station records which vehicles
+purchased single tickets and used toll tags, along with the type of
+the vehicle. A statistical report is a write-out of this information
+for a given time period.
+
+\item [{Express~Lane}] An express lane will automatically admit passage
+to vehicles equipped with a toll tag. The vehicle will be registered
+as having passed through the lane at the given time.
+
+\item [{Credit~Card~Lane}] In a credit card lane, the user can use their
+credit card to purchase a single ticket.
+
+\item [{Cash~Lane}] A cash lane is manned by a cashier, who accepts cash
+payments as well as credit cards. When a cashier mans a credit card
+lane, it becomes a cash lane.
+
+\item [{Normal Lane}] A normal lane is an umbrella term for non-express lanes.
+
+\item [{Cashier}] A cashier operates a cash lane and accepts cash payment
+in exchange for single tickets.
+
+\item [{Customer}] The customer is the driver of a vehicle.
+
+\item [{Rate}] The price to pay for a certain vehicle type for certain ticket/tag type.
+
+\item [{Enterprise}] The company which control these sections of the motorway.
+
+\item [{Enterprise manager}] The manager who is in charge of all the toll stations.
+
+\end{description}
 
 \subsubsection {Use Case Diagram}
 
@@ -68,10 +109,9 @@
 \subsection{Non-Functional Requirements}
 Usability requirements:
 \begin{enumerate}
-\item Customers in a normal lane must be able to pay for a ticket (in a check-in lane) or check out a ticket (in a check-out lane), and thereafter drive through the lane, in at most 2 minutes. If the customer requires help from the cashier then the constraint relaxed to 5 minutes.
+\item Customers in a normal lane must be able to pay for a ticket (in a check-in lane) or check out a ticket (in a check-out lane), and thereafter drive through the lane, in at most 2 minutes. If the customer requires help from the cashier then the constraint is relaxed to 5 minutes.
 \item Customers must be able to drive through an express lane in at most 15 seconds.
 \item Cashiers must be able to use the toll lane computer after 2 hours of training with at most 1 error per hour.
-\item Station managers must be able to use the station client after 5 hours of training with at most 1 error per hour.
 \item Enterprise managers must be able to use the station client after 5 hours of training with at most 1 error per hour.
 \end{enumerate}
 
