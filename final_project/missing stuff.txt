@@ -3,3 +3,9 @@ glossary update (jannick/philip and søren/andreas groups)
 non-functional requirements?
 
 a small amount of text for each section
+
+
+
+
+
+add text to explain why there is no sequence diagram for alternative scenario on check out single ticket
