@@ -1,8 +1,39 @@
-\section*{Component diagrams}
+\section*{Component design}
 In the following sections we will describe and explain our component diagrams of the system, and how the different components interact throughout the system.
 \subsection*{Toll lanes}
 In figure \textbf{\underline{\textit{XXXX}}} we show the toll lane components. In the diagram four main components are shown, namely Express Check-in Toll Lane, Express Check-out Toll Lane, Normal Check-out Toll Lane and Normal Check-in Toll Lane. These components describe the software present in the different kind of toll lanes, and how they interface with their needed hardware components, such as Antenna and Ticket Reader, and then how these interfaces with different actors. Interfaces to the other parts of the system is split up and described in other diagrams to keep the complexity down in this diagram.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{img/component_diagram/ComponentDiagram_TollLaneToStationAndEnterprise.png}
+\caption{Component diagram for toll lanes}
+\label{fig:ComponentDiagram_TollLaneToStationAndEnterprise}
+\end{figure}
+
 \subsection*{Toll station}
 In figure \textbf{\underline{\textit{XXXX}}} the component diagram for the toll station is shown. The toll station component contains the toll lanes and the toll station server component. When the lanes have to communicate with the enterprise server it is done through the toll station server component. The main thing to communicate out of the toll station component is toll tag data, and data for the reports the enterprise manager can generate.
 \subsection*{Enterprise server}
 Finally, in figure \textbf{\underline{\textit{XXXX}}} we show the simple component diagram for the enterprise server, along with the most macroscopic view of our system. 
+
+\section*{Protocol state machines}
+In this section we will explain, on a high abstraction level, what the protocol state machines does.
+\subsection*{Webserver - Enterprise protocol}
+The diagram in figure \textbf{\underline{\textit{XXXX}}} shows the communication protocol for buying toll tags.
+\subsection*{Touchscreen protocol}
+The diagram in figure \textbf{\underline{\textit{XXXX}}} shows the communication protocol for getting the price for different vehicle types. It's used by customers if it is a credit card lane, and the cashier if it is a cash lane.
+\subsection*{Antenna protocol}
+Figure \textbf{\underline{\textit{XXXX}}} shows the interface the antenna uses, to send out messages when cars are detected. 
+\subsection*{Credit card reader protocol}
+In figure \textbf{\underline{\textit{XXXX}}} the interface for sending data about credit card information.
+\subsection*{Toll lane - bank protocol}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{img/protocol_state_machine/protocol_state_machine_tlc_to_bank.png}
+\caption{communications protocol between the bank and the credit card toll lane is shown}
+\label{fig:protocol_state_machine_tlc_to_bank}
+\end{figure}
+
+
+
+
+\section*{Life-cycle state machines}
+indsæt philip tekst

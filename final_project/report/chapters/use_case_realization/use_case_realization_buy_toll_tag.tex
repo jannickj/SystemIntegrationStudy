@@ -12,7 +12,7 @@
 	\begin{enumerate}
 	\item The webserver calls \texttt{fillOutForm(personalData, vehicleData, bankData)} on the enterprise server.
 		\begin{enumerate}
-		\item The enterprise server requests the bank to transfer money from the customer's account using \texttt{withdraw(bankData, tollTagPrice)} on the bank. The call returns \texttt{true}, as the payment succeeds.
+		\item The enterprise server requests the bank to transfer money from the customer's account using \texttt{withdraw(bankData, tollTagPrice)} on the bank, where \texttt{tollTagPrice} is a predefined initial fee for ordering a toll tag. The call returns \texttt{true}, as the payment succeeds.
 		\item The customer data is stored in a database when the enterprise server calls \texttt{storeCustomerData(personalData, vehicleData, bankData)}.
 		\item The enterprise server calls \texttt{submitTollTagOrder(personalData, vehicleData, bankData)} which orders a physical toll tag to be encoded with a generated ID and mailed to the customer.
 		\end{enumerate}
