@@ -1,18 +1,18 @@
-\subsection{Check-In Single Ticket Main Scenario}
+\subsubsection{Check-In Single Ticket Main Scenario}
 
 \begin{figure}
-\centerline{\includegraphics[width=\textwidth]{"img/sequence_diagrams/SequenceDiagram_CheckInSingleTicket_cash"}}
+\centerline{\includegraphics[width=1.4\columnwidth]{"img/sequence_diagrams/SequenceDiagram_CheckInSingleTicket_cash"}}
 \caption{Sequence diagram for main scenario of use case "Check-In Single Ticket"}
 \label{fig:seq_single_ticket_main}
 \end{figure}
 
 \begin{enumerate}
-\item The customer approaches the lane.
+\item The customer is at a cash lane.
 \item The cashier selects the customer's vehicle type, \texttt{vt}, on the touch screen using \texttt{selectVehicleType(vt)}.
 	\begin{enumerate}
 	\item This results in the touch screen calling \texttt{getVehiclePrice(vt)} on \texttt{TollLaneNormalCheckIn}, ie. the toll lane computer. 
 	\item The \texttt{price} is returned and is presented to the cashier by being shown on the touch screen, 
-	\item The toll lane computer waits for the the customer to interact with the credit card reader, or the cashier to close the cash register.
+	\item The toll lane computer awaits a payment.
 	\end{enumerate}
 \item The cashier recieves appropriate cash payment from the customer, and deposits it in the cash register, (calling \texttt{depositCash()})
 	\begin{enumerate}
@@ -25,8 +25,11 @@
 		\end{enumerate}
 	\item The generated ticket is sent to the ticket printer using the \texttt{printer.printTicket(ticket)} method. The ticket printer prints the ticket.
 	\item The toll lane computer calls \texttt{barrier.open()}, causing the barrier to open.
-	\item The toll lane computer delays execution for a fixed time, allowing the vehicle to pass through.
-	\item The toll lane computer calls \texttt{barrier.close()}.
+	\item The toll lane computer calls \texttt{delay()} delaying execution for a fixed time, allowing the vehicle to pass through.
+	\end{enumerate}
+	\item The customer leaves the lane.
+	\begin{enumerate}
+	\item After the call to \texttt{delay()} returns, the toll lane computer calls \texttt{barrier.close()}, and the barrier closes.
 	\end{enumerate}
 	
 \end{enumerate}
@@ -35,7 +38,7 @@
 \subsubsection{Check-In Single Ticket Alternative Scenario}
 
 \begin{figure}
-\centerline{\includegraphics[width=\textwidth]{"img/sequence_diagrams/SequenceDiagram_CheckInSingleTicket_card"}}
+\centerline{\includegraphics[width=1.4\columnwidth]{"img/sequence_diagrams/SequenceDiagram_CheckInSingleTicket_card"}}
 \caption{Sequence diagram for alternative scenario of use case "Check-In Single Ticket"}
 \label{fig:seq_single_ticket_alt}
 \end{figure}
