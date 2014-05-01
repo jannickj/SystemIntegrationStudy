@@ -59,89 +59,32 @@
 
 \begin_body
 
-\begin_layout Subsubsection
-Use case: Check-out toll tag
-\end_layout
-
-\begin_layout Paragraph
-Description 
+\begin_layout Section*
+what was learned
 \end_layout
 
 \begin_layout Standard
-A customer with a toll tag checks out at an express lane.
+We learned the process of how to take the descriptions of a large system,
+ and use that to generate diagrams which progressively got us closer to
+ our target product.
+ We also learned in finer details how some of the diagrams works.
+ 
 \end_layout
 
-\begin_layout Paragraph
-Actors
-\end_layout
-
-\begin_layout Standard
-A customer.
-\end_layout
-
-\begin_layout Paragraph
-Preconditions
+\begin_layout Section*
+what was good
 \end_layout
 
 \begin_layout Standard
-The customer owns a toll tag which he has in his car, is in an express lane
- and has checked in.
+In our opinion all of our material is equally solid
 \end_layout
 
-\begin_layout Paragraph
-Main Scenarios
-\end_layout
-
-\begin_layout Enumerate
-The customer drives up to the barrier, and awaits check-out.
-\end_layout
-
-\begin_layout Enumerate
-The system checks out the customer.
-\end_layout
-
-\begin_layout Enumerate
-The system opens the barrier.
-\end_layout
-
-\begin_layout Enumerate
-The customer leaves the toll lane.
-\end_layout
-
-\begin_layout Enumerate
-The system closes the barrier.
-\end_layout
-
-\begin_layout Paragraph
-Alternative Scenarios
-\end_layout
-
-\begin_layout Enumerate
-Toll tag has not been checked in.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The toll station personal is informed.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-c1 has no toll tag
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The barrier does not open.
-\end_layout
-
-\end_deeper
-\begin_layout Paragraph
-Postconditions
+\begin_layout Section*
+what can be improved
 \end_layout
 
 \begin_layout Standard
-The customer has been checked out and allowed out of the lane.
+Nothing that we didn't already change.
 \end_layout
 
 \end_body
