@@ -1,5 +1,5 @@
-glossary update
+glossary update (jannick/philip and søren/andreas groups)
 
-non-functional requirements
+non-functional requirements?
 
-life-cycle state machine
+a small amount of text for each section
