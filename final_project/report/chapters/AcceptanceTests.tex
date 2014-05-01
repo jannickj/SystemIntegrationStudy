@@ -1,60 +1,12 @@
 
-\begin{figure}
-\centering
-\begin{tabular}{|l|l|l|}
-\hline 
-ActionFixture &  & \tabularnewline
-\hline 
-start & CheckInSingleTicket & \tabularnewline
-\hline 
-check & in a cash lane & \tabularnewline
-\hline 
-press & vehicle type & cashier\tabularnewline
-\hline 
-check & correct price is displayed & \tabularnewline
-\hline 
-action & open cash register & cashier\tabularnewline
-\hline 
-action & close cash register & cashier\tabularnewline
-\hline 
-check & ticket has been printed & \tabularnewline
-\hline 
-check & barrier is open & \tabularnewline
-\hline 
-action & leaves toll lane & customer\tabularnewline
-\hline 
-check & barrier is closed & \tabularnewline
-\hline 
-\end{tabular}
-\caption{Fit table for the main scenario of use case \emph{Check-In Single Ticket}}
-\end{figure}
-
-\begin{figure}
-\centering
-\begin{tabular}{|l|l|l|}
-\hline 
-ActionFixture &  & \tabularnewline
-\hline 
-start & CheckInSingleTicketAlt & \tabularnewline
-\hline 
-press & vehicle type & customer\tabularnewline
-\hline 
-check & correct price is displayed & \tabularnewline
-\hline 
-action & pay with credit card & customer\tabularnewline
-\hline 
-check & payment succesfull & \tabularnewline
-\hline 
-check & ticket has been printed & \tabularnewline
-\hline 
-check & barrier is open & \tabularnewline
-\hline 
-action & leaves toll lane & customer\tabularnewline
-\hline 
-check & barrier is closed & \tabularnewline
-\hline 
-\end{tabular}
-\caption{Fit table for alternative scenario of use case \emph{Check-In Single Ticket}}
-\end{figure}
+\input{"chapters/fit_tables/fit_table_check_in_single_ticket"}
 
 \input{"chapters/fit_tables/fit_table_buy_toll_tag.tex"}
+
+\input{"chapters/fit_tables/fit_table_toll_tag_check_in.tex"}
+
+\input{"chapters/fit_tables/fit_table_toll_tag_check_out.tex"}
+
+\input{"chapters/fit_tables/fit_table_show_reports.tex"}
+
+\input{"chapters/fit_tables/fit_table_single_ticket_check_out.tex"}
