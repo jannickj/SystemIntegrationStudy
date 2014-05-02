@@ -1,27 +1,7 @@
-%% LyX 2.0.5.1 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage{graphicx}
-
-\makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%% A simple dot to overcome graphicx limitations
-\newcommand{\lyxdot}{.}
-
-
-\makeatother
-
-\usepackage{babel}
-\begin{document}
-\begin{figure}
-\includegraphics[width=1\textwidth]{\lyxdot \lyxdot /report/img/sequence_diagrams/sequence_diagram_toll_tag_check_in}
-
+\begin{figure}[H]
+\centerline{\includegraphics[width=1.4\columnwidth]{img/sequence_diagrams/sequence_diagram_toll_tag_check_in}}
 \caption{Sequence diagram of toll tag check in}
-
-
+\label{fig:seq_check_in_toll_tag}
 \end{figure}
 
 \begin{enumerate}
@@ -67,5 +47,3 @@ which means the tag is no longer in range.
 it is safe to close the barrier. It will do that by sending a Close
 message to the barrier.\end{enumerate}
 \end{enumerate}
-
-\end{document}
