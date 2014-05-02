@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<program>
+  <variables>
+    <string>
+      <_file>""</_file>
+      <_newfile>""</_newfile>
+      <_uncropped_path>""</_uncropped_path>
+    </string>
+  </variables>
+  <main>
+    <FOREACH_STRING_LIST>
+      <_file />
+      <LIST_FILES>
+        <GET_PROGRAM_PATH />
+      </LIST_FILES>
+      <do>
+        <IF>
+          <conditions>
+            <OR>
+              <OR>
+                <IS_STRING_EQUAL>
+                  <GET_FILE_EXT>
+                    <_file />
+                  </GET_FILE_EXT>
+                  <!---->"vsd"</IS_STRING_EQUAL>
+                <IS_STRING_EQUAL>
+                  <GET_FILE_EXT>
+                    <_file />
+                  </GET_FILE_EXT>
+                  <!---->"vsdx"</IS_STRING_EQUAL>
+              </OR>
+              <!---->False</OR>
+          </conditions>
+          <then>
+            <SET_VARIABLE>
+              <_newfile />
+              <STRING_REPLACE>
+                <STRING_REPLACE>
+                  <_file />
+                  <!---->" "<!---->"_"</STRING_REPLACE>
+                <GET_PROGRAM_PATH />
+                <!---->""</STRING_REPLACE>
+            </SET_VARIABLE>
+            <SET_VARIABLE>
+              <_newfile />
+              <STRING_TO_LOWER>
+                <_newfile />
+              </STRING_TO_LOWER>
+            </SET_VARIABLE>
+            <SET_VARIABLE>
+              <_uncropped_path />
+              <CONCATENATE_FOUR>
+                <GET_PROGRAM_PATH />
+                <!---->"\report\img"<GET_REGEX_MATCH><_newfile /><!---->".*\."</GET_REGEX_MATCH><!---->"uncropped.pdf"</CONCATENATE_FOUR>
+            </SET_VARIABLE>
+            <PRINT>
+              <CONCATENATE>
+                <!---->"To PDF: "<_newfile /></CONCATENATE>
+            </PRINT>
+            <CONVERT_VISIO_FILE_FORMAT>
+              <_file />
+              <CONCATENATE_THREE>
+                <GET_PROGRAM_PATH />
+                <!---->"\report\img"<CONCATENATE><GET_REGEX_MATCH><_newfile /><!---->".*\."</GET_REGEX_MATCH><!---->"uncropped.pdf"</CONCATENATE></CONCATENATE_THREE>
+            </CONVERT_VISIO_FILE_FORMAT>
+            <PRINT>
+              <CONCATENATE>
+                <!---->"Cropping: "<_newfile /></CONCATENATE>
+            </PRINT>
+            <EXECUTE_PROGRAM>
+              <!---->"pdfcrop"<CONCATENATE_FOUR><CONCATENATE><!---->"""<_uncropped_path /></CONCATENATE><!---->"" ""<GET_REGEX_MATCH><_uncropped_path /><!---->".*?\."</GET_REGEX_MATCH><!---->"pdf""</CONCATENATE_FOUR></EXECUTE_PROGRAM>
+            <PRINT>
+              <CONCATENATE>
+                <!---->"Deleting uncropped: "<_newfile /></CONCATENATE>
+            </PRINT>
+            <FILE_DELETE>
+              <_uncropped_path />
+            </FILE_DELETE>
+          </then>
+          <else />
+        </IF>
+      </do>
+    </FOREACH_STRING_LIST>
+  </main>
+</program>
