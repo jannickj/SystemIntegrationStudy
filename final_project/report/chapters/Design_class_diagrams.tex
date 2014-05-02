@@ -1,49 +1,49 @@
 This section contains the class diagrams for the toll system. We have chosen to model each type of toll station as a separate class without any inheritance, since they only share a few interfaces like Barrier and Antenna in the case of the express lanes. Instead they all access the same interface to the shared component. Similarly, the enterprise server and the normal check in lane access the bank through the same interface.
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_enterprise_client}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_enterprise_client}}
 \caption{Class diagram for the enterprise client.}
 \label{fig:cld_ec}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_enterprise_server}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_enterprise_server}}
 \caption{Class diagram for the enterprise server.}
 \label{fig:cld_es}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_station_server}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_station_server}}
 \caption{Class diagram for the station server, which connects to the various toll lanes and to the enterprise server.}
 \label{fig:cld_ss}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_Tag_Ticket_VehicleType}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_Tag_Ticket_VehicleType}}
 \caption{Class diagram for tickets and toll tags. Both need information about vehicle types.}
 \label{fig:cld_ttvt}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_toll_lane_express_check_in}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_toll_lane_express_check_in}}
 \caption{Class diagram for the express check in lane.}
 \label{fig:cld_tlei}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_toll_lane_express_check_out}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_toll_lane_express_check_out}}
 \caption{Class diagram for the express check out lane.}
 \label{fig:cld_tleo}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_toll_lane_normal_check_in}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_toll_lane_normal_check_in}}
 \caption{Class diagram for the normal check in lane.}
 \label{fig:cld_tlni}
 \end{figure}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=\textwidth]{img/class_diagrams/class_diagram_toll_lane_normal_check_out}}
+\centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_toll_lane_normal_check_out}}
 \caption{Class diagram for the normal check out lane.}
 \label{fig:cld_tlno}
 \end{figure}
