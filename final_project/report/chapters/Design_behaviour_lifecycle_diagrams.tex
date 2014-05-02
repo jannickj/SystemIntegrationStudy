@@ -1,3 +1,5 @@
+\subsection*{Life-cycle state machines}
+In this section we show the important life-cycle state machines, alogn with a small explanation of them.
 \subsubsection*{Express Lane Check-in}
 The ‘Express Check-in Toll Lane’-component, seen in \autoref{fig:life_cycle_statemachine_toll_lane_computer_express_check_in}, receives a message from the antenna to indicate that a vehicle with a toll tag has entered the lane. It reacts by sending a message to the station server to check that the tag is valid. If it receives true it tells the station server to check in the tag, opens the barrier, then closes it when the antenna informs it that the tag can no longer be detected.  Otherwise it goes to a faulty tag state and waits for a cashier to resolve the situation. 
 \begin{figure}[H]
