@@ -1,4 +1,4 @@
-This section contains the class diagrams for the toll system. We have chosen to model each type of toll station as a separate class without any inheritance, since they only share a few interfaces like Barrier and Antenna in the case of the express lanes. Instead they all access the same interface to the shared component. Similarly, the enterprise server and the normal check in lane access the bank through the same interface.
+This section contains the class diagrams for the toll system. We have chosen to model each type of toll station as a separate class without any inheritance since they only share a few interfaces like Barrier, or Antenna in the case of the express lanes. Instead they all access the shared component through the same interface. Similarly, the enterprise server and the normal check in lane access the bank through the same interface.
 
 \begin{figure}[H]
 \centerline{\includegraphics[width=\textwidth]{img/class_diagram/class_diagram_enterprise_client}}
