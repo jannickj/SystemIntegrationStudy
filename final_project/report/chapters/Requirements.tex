@@ -17,7 +17,7 @@
 \input{chapters/use_cases/use_case_check_in_single_ticket}
 \subsubsection{Check out single ticket} \label{sec:use_case_check_out_single_ticket}
 \input{chapters/use_cases/use_case_check_out_single_ticket}
-\subsubsection{Show report} \label{sec:use_case_show_reports}
+\subsubsection{Show reports} \label{sec:use_case_show_reports}
 \input{chapters/use_cases/use_case_show_report}
 \subsubsection{Check in toll tag} \label{sec:use_case_check_in_toll_tag}
 \input{chapters/use_cases/use_case_toll_tag_check_in}
@@ -30,18 +30,18 @@
 \section{Non-Functional Requirements}
 Usability requirements:
 \begin{enumerate}
-\item Customers in a normal lane must be able to pay for a ticket (in a check-in lane) or check out a ticket (in a check-out lane), and thereafter drive through the lane, in at most 2 minutes. If the customer requires help from the cashier then the constraint is relaxed to 5 minutes.
-\item Customers must be able to drive through an express lane in at most 15 seconds.
-\item Cashiers must be able to use the toll lane computer after 2 hours of training with at most 1 error per hour.
-\item Enterprise managers must be able to use the station client after 5 hours of training with at most 1 error per hour.
+\item A customer in a normal lane must be able to pay for a ticket (in a check in lane) or check out a ticket (in a check out lane), and then drive through the lane in at most 2 minutes. If the customer requires help from the cashier then the requirement is relaxed to 5 minutes.
+\item A customer must be able to drive through an express lane in at most 15 seconds.
+\item A cashier must be able to use the toll lane computer after 2 hours of training with at most 1 error per hour.
+\item An enterprise manager must be able to use the station client after 5 hours of training with at most 1 error per hour.
 \end{enumerate}
 
 
 Performance requirements:
 \begin{enumerate}
-\item Toll tags must be recognized at express lanes in at most 5 seconds.
+\item A toll tag must be recognized at an express lane in at most 5 seconds.
 \item Each toll lane and toll station computer should have an uptime of 99.9\%.
 \item The enterprise server should have an uptime of 99.99\%.
-\item The time for the system to generate reports for a single toll station must not exceed 1 minute.
-\item Every other administrative tasks must not exceed 30 seconds of computation time.
+\item The time it takes to generate the report for a single toll station must not exceed 1 minute.
+\item Other administrative tasks must not take longer than 30 seconds of computation time.
 \end{enumerate}
