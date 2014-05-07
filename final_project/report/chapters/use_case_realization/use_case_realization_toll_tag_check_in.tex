@@ -9,41 +9,41 @@
 
 \begin{enumerate}
 \item The lane detects the customer's toll tag through the antenna by receiving
-a tollTagDetected message.
+a \texttt{tollTagDetected} message.
 \end{enumerate}
 \item The system checks in the customer.
 
 \begin{enumerate}
-\item The lane then checks in the tag by. 
+\item The lane then checks in the tag in the following manner: 
 
 \begin{enumerate}
-\item It first sends authenticateTollTag with the tag to the StationServer
-\item The StationServer sends the same message to the EnterpriseServer
-\item The EnterpriseServer then checks that the tag has not expired and
+\item It first sends \texttt{authenticateTollTag} with the tag to the station server
+\item The station server sends the same message to the enterprise server
+\item The enterprise server then checks that the tag has not expired and
 is not already checked in.
-\item Once the EnterpriseServer has authenticated the tag it responds with
-``true'' if the above conditions held,
-\item The StationServer sends the response back to the Express lane .
-\item When the Express lane has received the response, if it was true it
-will send a check in message which should now succeed.
+\item Once the enterprise server has authenticated the tag it responds with
+\texttt{true} if the above conditions held,
+\item The station server sends the response back to the express lane .
+\item When the express lane has received the response, if it was true it
+will send a \texttt{checkIn} which should now succeed.
 \end{enumerate}
 \end{enumerate}
 \item The system opens the barrier.
 
 \begin{enumerate}
-\item Once the tag has been checked in, the Express lane will send the message
-Open to the barrier, which will cause it to open.
+\item Once the tag has been checked in, the express lane will send the message
+\texttt{open} to the barrier, which will cause it to open.
 \end{enumerate}
 \item The customer leaves the toll lane.
 
 \begin{enumerate}
-\item The lane will await the message tollTagNoLongerDetected from the antenna
+\item The lane will await the message \texttt{tollTagNoLongerDetected} from the antenna
 which means the tag is no longer in range.
 \end{enumerate}
 \item The system closes the barrier.
 
 \begin{enumerate}
-\item Once the Express has received tollTagNoLongerDetected, it will assume
-it is safe to close the barrier. It will do that by sending a Close
+\item Once the express lane has received \texttt{tollTagNoLongerDetected}, it will assume
+it is safe to close the barrier. It will do that by sending a \texttt{close}
 message to the barrier.\end{enumerate}
 \end{enumerate}
