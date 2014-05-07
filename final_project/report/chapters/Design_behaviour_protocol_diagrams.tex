@@ -1,5 +1,5 @@
-In this section we will explain what the protocol state machines do.
-\subsubsection*{Webserver - Enterprise protocol}
+In this section we will show the protocol state machines. The protocol state machines for the interfaces between the users and the system have been omitted as they are too simple and therefore not interesting.
+\subsubsection*{Webserver protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_webserver_to_enterprise}
@@ -32,7 +32,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_tlc_to_ccr}
 \end{figure}
 
-\subsubsection*{Toll lane - bank protocol}
+\subsubsection*{Bank protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_tlc_to_bank}
@@ -40,15 +40,15 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_tlc_to_bank}
 \end{figure}
 
-\subsubsection*{Station server - normal toll lane check in protocol}
+\subsubsection*{Normal check in lane protocol}
 \begin{figure}[H]
 \centering
-%\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_normal_lane_check_in}
+\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_normal_lane_check_in}
 \caption{Interface used to buy a ticket}
 \label{fig:protocol_state_machine_station_server_to_normal_lane_check_in}
 \end{figure}
 
-\subsubsection*{Station server - normal toll lane check out protocol}
+\subsubsection*{Normal check out lane protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_normal_lane_check_out}
@@ -56,7 +56,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_station_server_to_normal_lane_check_out}
 \end{figure}
 
-\subsubsection*{Station server - enterprise server protocol}
+\subsubsection*{Station server to enterprise server protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_enterprise_server}
@@ -64,18 +64,18 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_station_server_to_enterprise_server}
 \end{figure}
 
-\subsubsection*{Express toll lane check in - station server protocol}
+\subsubsection*{Express check in lane protocol}
 \begin{figure}[H]
 \centering
-%\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_with_toll_computer_check_in}
+\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_express_lane_check_in}
 \caption{The communication protocol for checking in a toll tag}
 \label{fig:protocol_state_machine_station_server with_toll_computer_check_in}
 \end{figure}
 
-\subsubsection*{Express toll lane check out - station server protocol}
+\subsubsection*{Express check in lane protocol}
 \begin{figure}[H]
 \centering
-%\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_express_lane_check_out}
+\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_express_lane_check_out}
 \caption{The communication protocol for checking out a toll tag}
 \label{fig:protocol_state_machine_station_server with_toll_computer_check_out}
 \end{figure}
@@ -88,7 +88,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_ticket_reader}
 \end{figure}
 
-\subsubsection*{Enterprise server - station server protocol}
+\subsubsection*{Enterprise server to station server protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_enterprise_server_to_station_server}
@@ -112,7 +112,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_barrier}
 \end{figure}
 
-\subsubsection*{Enterprise client - enterprise server protocol}
+\subsubsection*{Enterprise client to enterprise server protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_enterprise_server_to_enterprise_client}
@@ -120,10 +120,10 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_enterprise_server_to_enterprise_client}
 \end{figure}
 
-\subsubsection*{Enterprise manager - enterprise client protocol}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_enterprise_client_enterprise_manager}
-\caption{The communication protocol between the enterprise client and the enterprise manager}
-\label{fig:protocol_state_machine_enterprise_client_enterprise_manager}
-\end{figure}
+%\subsubsection*{Enterprise manager to enterprise client protocol}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_enterprise_client_enterprise_manager}
+%\caption{The communication protocol between the enterprise client and the enterprise manager}
+%\label{fig:protocol_state_machine_enterprise_client_enterprise_manager}
+%\end{figure}
