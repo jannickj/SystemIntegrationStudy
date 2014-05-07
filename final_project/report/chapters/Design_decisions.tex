@@ -1,5 +1,9 @@
 \subsection{Bidirectional stations}
 The toll stations are designed to have both check in and check out, meaning that the motorway the station is placed upon is a motorway with lanes in both directions.
 
+\subsection{Bank connection from enterprise server}
+The enterprise server has been designed such that it has a connection to the bank. This is in addition to the toll lanes which also have a connection to the bank according to the project description. This is to simplify buying toll tags from the web interface to the webserver.
+In order for the components to share a common interface with the bank, we have modeled it such that a withdrawal can be made performed given only credit card information.
+
 \subsection{Storing tags and tickets}
 Whenever a customer checks in or out of a toll lane, the ticket or tag information is stored at different locations in the system. Every station server maintains a database which can be queried for check-ins, check-outs and ticket sales given a time period. This is used for reporting statistics. The enterprise server contains information about the currently valid toll tags and tickets. When a ticket is used for checking out a vehicle, or when it is 24 hours old, it is removed from the enterprise server. Since a customer normally checks out at a station different from the one he checked in at, this information needs to be shared on the enterprise server.
