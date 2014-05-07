@@ -1,6 +1,4 @@
-\section*{Behavior design}
-\subsection*{Protocol state machines}
-In this section we will explain, on a high abstraction level, what the protocol state machines does.
+In this section we will explain what the protocol state machines do.
 \subsubsection*{Webserver - Enterprise protocol}
 \begin{figure}[H]
 \centering
@@ -13,16 +11,16 @@ In this section we will explain, on a high abstraction level, what the protocol 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_touchscreen}
-\caption{Protocol statemachine for the touchscreen}
+\caption{Protocol state machine for the touchscreen}
 \label{fig:protocol_state_machine_touchscreen}
 \end{figure}
-The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the communication protocol for getting the price for different vehicle types. It's used by customers if it is a credit card lane, and the cashier if it is a cash lane.
+The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the communication protocol for getting the price for different vehicle types. In a credit card lane it is used by customers to buy single tickets. In a cash lane it is used by cashiers to sell single tickets.
 
 \subsubsection*{Antenna protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_antenna}
-\caption{The interface the antenna uses, to send out messages when cars are detected}
+\caption{The interface the antenna uses to send out messages when cars are detected}
 \label{fig:protocol_state_machine_antenna}
 \end{figure}
 
@@ -38,7 +36,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_tlc_to_bank}
-\caption{Communications protocol between the bank and the credit card toll lane is shown}
+\caption{Communication protocol between the bank and the credit card toll lane}
 \label{fig:protocol_state_machine_tlc_to_bank}
 \end{figure}
 
@@ -46,7 +44,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_normal_lane_check_out}
-\caption{Interface to allow toll lanes to validate tickets}
+\caption{Interface used to validate a ticket}
 \label{fig:protocol_state_machine_station_server_to_normal_lane_check_out}
 \end{figure}
 
@@ -54,7 +52,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_enterprise_server}
-\caption{Interface to use for getting data for the generation of reports}
+\caption{Interface used for requesting report data}
 \label{fig:protocol_state_machine_station_server_to_enterprise_server}
 \end{figure}
 
@@ -62,7 +60,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_with_toll_computer_check_out}
-\caption{The communication protocol for checking out toll tag}
+\caption{The communication protocol for checking out a toll tag}
 \label{fig:protocol_state_machine_station_server with_toll_computer_check_out}
 \end{figure}
 
@@ -70,7 +68,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_ticket_reader}
-\caption{The communication protocol for the ticket reader used during checkout for non-tag checkout}
+\caption{The communication protocol for the ticket reader used for single ticket check out}
 \label{fig:protocol_state_machine_ticket_reader}
 \end{figure}
 
@@ -86,7 +84,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_CR_TLC}
-\caption{The communication protocol the cash register offers}
+\caption{The communication protocol for the cash register}
 \label{fig:protocol_state_machine_CR_TLC}
 \end{figure}
 
@@ -94,7 +92,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_barrier}
-\caption{The communication protocol the barrier offers}
+\caption{The communication protocol for the barrier}
 \label{fig:protocol_state_machine_barrier}
 \end{figure}
 
@@ -102,7 +100,7 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_enterprise_server_to_enterprise_client}
-\caption{The interface that facilitates the requestReport functionality needed for show reports between enterprise client and server}
+\caption{The communication protocol between the enterprise client and the enterprise server}
 \label{fig:protocol_state_machine_enterprise_server_to_enterprise_client}
 \end{figure}
 
@@ -110,6 +108,6 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_enterprise_client_enterprise_manager}
-\caption{The interface the enterprise client provides to the enterprise manager}
+\caption{The communication protocol between the enterprise client and the enterprise manager}
 \label{fig:protocol_state_machine_enterprise_client_enterprise_manager}
 \end{figure}
