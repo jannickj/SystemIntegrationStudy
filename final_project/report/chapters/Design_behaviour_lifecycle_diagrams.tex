@@ -52,7 +52,7 @@ As the functionality of the enterprise server is quite complex we have split up 
 
 Next we show how reports are compiled for the enterprise manager.
 
-Finally we show how the enterprise server authenticates toll tags. First the server authenticates the toll tag and then it checks  whether the toll tag is expired.
+Finally we show how the enterprise server authenticates toll tags. First the server authenticates that the toll tag is issued and then it checks  whether the toll tag is expired.
 
 \begin{figure}[H]
 \centering
@@ -61,7 +61,7 @@ Finally we show how the enterprise server authenticates toll tags. First the ser
 \label{fig:life_cycle_state_machine_enterprise_server}
 \end{figure}
 
-\paragraph*{Part 2} In \autoref{fig:life_cycle_state_machine_enterprise_server_part2} we show how the enterprise server handles check in and check out with a toll tag. For check in we register the relevant information to be used for reports, as well as for doing a check out. \textit{\textbf{\underline{REVIEW THIS AFTER LOOKING AT DIAGRAM}}}
+\paragraph*{Part 2} In \autoref{fig:life_cycle_state_machine_enterprise_server_part2} we show how the enterprise server handles check in with a toll tag. For check in we register the relevant information for doing a check out. We also show how the enterprise verifies that a toll tag has been checked in. This is to be used before the toll tag can be properly checked out.
 
 \begin{figure}[H]
 \centering
@@ -70,7 +70,11 @@ Finally we show how the enterprise server authenticates toll tags. First the ser
 \label{fig:life_cycle_state_machine_enterprise_server_part2}
 \end{figure}
 
-\paragraph*{Part 3} In \autoref{fig:life_cycle_state_machine_enterprise_server_part3} .
+\paragraph*{Part 3} In \autoref{fig:life_cycle_state_machine_enterprise_server_part3} we first show how to check out with single tickets. The enterprise server validates the ticket and then removes it from the database on the enterprise server making the validation check fail if the customer attempts to use it again.
+\\
+We then show how to check out a toll tag. The check out is performed after the toll tag has been verified.
+\\
+Finally we show what happens when a ticket is sold.
 
 \begin{figure}[H]
 \centering
