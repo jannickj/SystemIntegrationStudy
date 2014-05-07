@@ -1,49 +1,44 @@
 \begin{description}
-\item [{Cash~Lane}] A cash lane is operated by a cashier, who accepts cash
+\item [{Cash~Lane}] A cash lane is operated by a cashier who accepts cash
 payments as well as credit cards. When a cashier operates a credit card
-lane, it becomes a cash lane.
+lane it becomes a cash lane.
 
-\item [{Cashier}] A cashier operates a cash lane and accepts cash payment
+\item [{Cashier}] A cashier operates a cash lane and accepts cash payments
 in exchange for single tickets.
 
-\item [{Customer}] The customer is the driver of a vehicle.
+\item [{Customer}] A customer is the driver of a vehicle.
 
-\item [{Credit~Card~Lane}] In a credit card lane, the customer can use their
+\item [{Credit~Card~Lane}] In a credit card lane, a customer can use his
 credit card to purchase a single ticket.
 
-\item [{Enterprise}] The company which control these sections of the motorway.
+\item [{Enterprise}] The company that controls the toll stations for these sections of the motorway system.
 
-\item [{Enterprise~Manager}] The manager who is in charge of all the toll stations.
+\item [{Enterprise~Manager}] The manager in charge of all of the toll stations.
 
-\item [{Enterprise~Server}] The enterprise server is the main connection point of all the subsystems.
+\item [{Enterprise~Server}] The enterprise server is the main connection point of all the toll stations.
 
 \item [{Express~Lane}] An express lane will automatically admit passage
-to vehicles equipped with a toll tag. The vehicle will be registered
-as having passed through the lane at the given time.
+to vehicles equipped with a toll tag. The vehicle is registered
+when it passes through the lane.
 
-\item [{Normal~Lane}] A normal lane is an umbrella term for non-express lanes.
+\item [{Normal~Lane}] A normal lane is a non-express lane.
 
-\item [{Rate}] The price to pay for a certain vehicle type for certain ticket/tag type.
+\item [{Rate}] The price for using the motorway with a ticket or a tag. 
 
 \item [{Single ticket}] A ticket issued to a customer when checking in at a normal toll lane. It is valid for 24 hours or until used to check out.
 
-\item [{Station~Manager}] The manager who is in charge of a single toll station.
+\item [{Station~Manager}] The manager in charge of a single toll station.
 
-\item [{Station~Server}] Each toll station has a Staion Server which handles communications from the toll lanes to the rest of the system.
+\item [{Station~Server}] Each toll station has a station server which handles communication between the toll lanes and the rest of the system. The toll stations store statistical data about usage of the motorway.
 
-\item [{Statistical~Report}] Each toll station records which vehicles
-purchased single tickets and used toll tags, along with the type of
-the vehicle. A statistical report is a write-out of this information
-for a given time period.
+\item [{Statistical~Report}] A statistical report is a collection of the information
+stored at the toll stations.
 
 
-
-
-
-\item [{Toll~tag}] A toll tag is a physical device which will admit passage
+\item [{Toll~tag}] A toll tag is a physical device which grants passage
 through an express lane when equipped on a vehicle. Toll tags need
-to be ordered by customers, and can only be used by one vehicle. The
-toll system automatically computes the fare of the vehicle based on
+to be ordered by customers. Each toll tag can only be used by one vehicle. The
+toll system automatically computes the fare based on
 the distance travelled between check in and check out.
 
 \item [{Toll~Station}] A toll station is a collection of toll lanes. A
