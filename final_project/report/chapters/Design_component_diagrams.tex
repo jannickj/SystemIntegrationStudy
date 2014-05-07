@@ -1,12 +1,13 @@
 
 In the following sections we will describe and explain our component diagrams of the system, and how the different components interact throughout the system.
-\subsubsection*{Toll lanes}
-In \autoref{fig:ComponentDiagram_TollLane} we show the toll lane components. In the diagram four main components are shown, namely Express Check-in Toll Lane, Express Check-out Toll Lane, Normal Check-out Toll Lane and Normal Check-in Toll Lane. These components describe the software present in the different kind of toll lanes, and how they interface with their needed hardware components, such as Antenna and Ticket Reader, and then how these interfaces with different actors. Interfaces to the other parts of the system is split up and described in other diagrams to keep the complexity down in this diagram.
+
+\subsubsection*{Enterprise server}
+In \autoref{fig:ComponentDiagram_Enterprise} we show the simple component diagram for the enterprise server, along with the most macroscopic view of our system. 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{img/component_diagrams/componentdiagram_tolllane}
-\caption{Component diagram for toll lanes}
-\label{fig:ComponentDiagram_TollLane}
+\includegraphics[width=1\textwidth]{img/component_diagrams/ComponentDiagram_Enterprise}
+\caption{Component diagram for enterprise}
+\label{fig:ComponentDiagram_Enterprise}
 \end{figure}
 
 \subsubsection*{Toll station}
@@ -18,11 +19,11 @@ In \autoref{fig:ComponentDiagram_TollLaneToStationAndEnterprise} the component d
 \label{fig:ComponentDiagram_TollLaneToStationAndEnterprise}
 \end{figure}
 
-\subsubsection*{Enterprise server}
-Finally, in \autoref{fig:ComponentDiagram_Enterprise} we show the simple component diagram for the enterprise server, along with the most macroscopic view of our system. 
+\subsubsection*{Toll lanes}
+In \autoref{fig:ComponentDiagram_TollLane} we show the toll lane components. In the diagram four main components are shown, namely Express Check-in Toll Lane, Express Check-out Toll Lane, Normal Check-out Toll Lane and Normal Check-in Toll Lane. These components describe the software present in the different kind of toll lanes, and how they interface with their needed hardware components, such as Antenna and Ticket Reader, and then how these interfaces with different actors. Interfaces to the other parts of the system is split up and described in other diagrams to keep the complexity down in this diagram.
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{img/component_diagrams/ComponentDiagram_Enterprise}
-\caption{Component diagram for enterprise}
-\label{fig:ComponentDiagram_Enterprise}
+\includegraphics[width=1\textwidth]{img/component_diagrams/componentdiagram_tolllane}
+\caption{Component diagram for toll lanes}
+\label{fig:ComponentDiagram_TollLane}
 \end{figure}
