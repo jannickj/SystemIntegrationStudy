@@ -40,7 +40,15 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_tlc_to_bank}
 \end{figure}
 
-\subsubsection*{Station server - normal toll lane checkout protocol}
+\subsubsection*{Station server - normal toll lane check in protocol}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_normal_lane_check_in}
+\caption{Interface used to buy a ticket}
+\label{fig:protocol_state_machine_station_server_to_normal_lane_check_in}
+\end{figure}
+
+\subsubsection*{Station server - normal toll lane check out protocol}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_normal_lane_check_out}
@@ -56,10 +64,18 @@ The diagram in \autoref{fig:protocol_state_machine_touchscreen} shows the commun
 \label{fig:protocol_state_machine_station_server_to_enterprise_server}
 \end{figure}
 
-\subsubsection*{Express toll lane checkout - station server protocol}
+\subsubsection*{Express toll lane check in - station server protocol}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_with_toll_computer_check_out}
+\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_with_toll_computer_check_in}
+\caption{The communication protocol for checking in a toll tag}
+\label{fig:protocol_state_machine_station_server with_toll_computer_check_in}
+\end{figure}
+
+\subsubsection*{Express toll lane check out - station server protocol}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{img/behaviour_state_machines/protocol_state_machines/protocol_state_machine_station_server_to_express_lane_check_out}
 \caption{The communication protocol for checking out a toll tag}
 \label{fig:protocol_state_machine_station_server with_toll_computer_check_out}
 \end{figure}
