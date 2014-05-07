@@ -1,8 +1,8 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{img/domain_model/domain_model}
-\caption{The class diagram depicting the domain model}
+\caption{The class diagram depicting the domain}
 \label{fig:domain_model}
 \end{figure}
 
-In our domain model in {\autoref{fig:domain_model}}, we have a computer at each toll lane that controls all the components that are part of that lane. All these lane computers are then connected to a station server which controls what goes on at the station. All of the stations for the entire system are then connected to a single enterprise server which manages communication between the stations. For sale of tickets and toll tags our lanes and enterprise server is able to communicate with the bank in order to process those sales.
+In our domain model in {\autoref{fig:domain_model}}, a computer at each toll lane controls all the components that are part of that lane. All these lane computers are connected to a station server which controls what goes on at the station. All of the stations for the entire system are in turn connected to a single enterprise server which manages communication between the stations. Each lane, as well as the enterprise server, has a connection to the bank which is used in the sale of tickets and toll tags.
